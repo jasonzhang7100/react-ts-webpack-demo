@@ -39,7 +39,7 @@ module.exports = {
       template: resolve(__dirname, '..', './src/index.html'),
     }),
     new CopyPlugin({
-      patterns: [{ from: 'source', to: 'dest' }],
+      patterns: [{ from: 'source', to: 'dest', noErrorOnMissing: true }],
     }),
   ],
 };
